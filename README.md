@@ -2,6 +2,8 @@
 
 following: https://www.youtube.com/watch?v=5lVQgZzLMHc&t=1564s
 
+live demo: https://gracious-goodall-b909e5.netlify.app/
+
 ##
 
 ## Project setup
