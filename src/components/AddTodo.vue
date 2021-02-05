@@ -27,4 +27,16 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+h3 {
+  text-align: center;
+  font-size: 5vh;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 0 1em 0;
+}
+</style>

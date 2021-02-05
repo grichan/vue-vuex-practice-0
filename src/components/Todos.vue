@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="todo-box">
     <h1>Todos</h1>
     <div
       @dblclick="onDBClick(todo)"
@@ -43,7 +43,26 @@ export default {
 </script>
 
 <style scoped>
+.todo-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 70vh;
+  margin: 0 auto;
+}
+
+.todo {
+  padding: 0.1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.todo:hover {
+  cursor: pointer;
+}
+
 .is-complete {
-  color: red;
+  /* color: rgba(255, 0, 0, 0.911); */
+  border-bottom: solid 1px rgb(218, 87, 87);
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="filter-todos">
     Filter todos
     <select @change="filterTodos($event)">
       <option value="200">200</option>
@@ -20,4 +20,14 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.filter-todos {
+  display: flex;
+  justify-content: center;
+  font-size: 2.5vh;
+}
+
+.filter-todos select {
+  padding: 0.1em;
+}
+</style>
