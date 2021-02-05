@@ -34,6 +34,15 @@ const actions = {
     await axios.delete("https://jsonplaceholder.typicode.com/todos/" + id);
 
     commit("removeTodo", id);
+  },
+  async filterTodos({ commit }, e) {
+    console.log(e.target.options[e.target.options.selectedIndex].innerText);
+    const response = await axios.get(
+      "https://jsonplaceholder.typicode.com/todos/?_limit=" +
+        parseInt(e.target.options[e.target.options.selectedIndex].innerText)
+    );
+
+    commit("setTodos", response.data);
   }
 };
 
