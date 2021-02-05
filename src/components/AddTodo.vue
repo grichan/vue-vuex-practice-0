@@ -22,7 +22,8 @@ export default {
       e.preventDefault();
       this.addTodo(this.title);
     }
-  }
+  },
+  components: {}
 };
 </script>
 

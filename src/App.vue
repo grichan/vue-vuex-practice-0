@@ -6,10 +6,6 @@
 <script>
 import Todos from "./components/Todos.vue";
 import AddTodo from "./components/AddTodo.vue";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
-
-library.add(faUserSecret);
 
 export default {
   name: "App",
